@@ -37,9 +37,9 @@ function renderModules(modules) {
   const grid = document.getElementById('modulos-grid');
   grid.innerHTML = modules
     .map(
-      (item) => `
-      <article class="card">
-        <h3>${item.title}</h3>
+      (item, index) => `
+      <article class="card module-card">
+        <h3>Módulo ${index + 1} — ${item.title}</h3>
         <p>${item.description}</p>
       </article>`
     )
@@ -51,13 +51,11 @@ function renderTurmas(turmas) {
   grid.innerHTML = turmas
     .map(
       (turma) => `
-      <article class="card turma">
+      <a class="card turma" href="${turma.reelsUrl}" target="_blank" rel="noopener noreferrer">
         <img loading="lazy" src="${turma.foto}" alt="${turma.nome}" />
         <h3>${turma.nome}</h3>
-        <p><strong>Data:</strong> ${turma.data}</p>
-        <p><strong>Local:</strong> ${turma.local}</p>
-        <p>“${turma.depoimento}”</p>
-      </article>`
+        <p class="turma__cta">Assistir Reels</p>
+      </a>`
     )
     .join('');
 }
@@ -71,7 +69,7 @@ function renderVideos(videos) {
       (video) => `
       <article class="card video">
         <a href="${video.url}" target="_blank" rel="noopener noreferrer">
-          <img loading="lazy" src="${video.thumb}" alt="${video.titulo}" />
+          <img loading="lazy" src="${video.thumb || 'fundo-essenza.jpeg'}" alt="${video.titulo}" />
         </a>
         <h3>${video.titulo}</h3>
       </article>`
@@ -82,7 +80,7 @@ function renderVideos(videos) {
     .map(
       (video) => `
       <article class="card video video--locked">
-        <img loading="lazy" src="${video.thumb}" alt="${video.titulo}" />
+        <img loading="lazy" src="${video.thumb || 'fundo-essenza.jpeg'}" alt="${video.titulo}" />
         <h3>${video.titulo}</h3>
         <span class="locked-tag">🔒 Conteúdo completo disponível para alunas.</span>
       </article>`

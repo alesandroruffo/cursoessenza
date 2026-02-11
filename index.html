@@ -1,10 +1,3 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/index.html b/index.html
-new file mode 100644
-index 0000000000000000000000000000000000000000..7f654109b6b4728ac8331a016928d86f7ccacbaa
---- /dev/null
-+++ b/index.html
-@@ -0,0 +1,224 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
@@ -22,7 +15,7 @@ index 0000000000000000000000000000000000000000..7f654109b6b4728ac8331a016928d86f
       content="Aprenda processos, prompts e organização para aplicar IA de forma prática no seu negócio."
     />
     <meta property="og:image" content="assets/fundo-essenza.webp" />
-        <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale" content="pt_BR" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -123,6 +116,7 @@ index 0000000000000000000000000000000000000000..7f654109b6b4728ac8331a016928d86f
 
     <main id="topo">
       <section class="hero section" id="essenza">
+        <img class="hero__bg" src="assets/fundo-essenza.webp" alt="Talissa com robô representando a união entre humano e IA" fetchpriority="high" />
         <div class="hero__overlay"></div>
         <div class="hero__content container">
           <p class="kicker">INOVA ESSENZA</p>
@@ -192,13 +186,14 @@ index 0000000000000000000000000000000000000000..7f654109b6b4728ac8331a016928d86f
 
       <section class="section section--accent" id="sobre" aria-labelledby="sobre-title">
         <div class="container about">
-          <div class="about__media" aria-hidden="true">Inova Essenza</div>
+          <img loading="lazy" src="assets/fundo-essenza.webp" alt="Talissa Mozzini" />
           <div>
             <h2 id="sobre-title">Sobre Talissa</h2>
             <blockquote>“O verdadeiro poder não está em saber tudo, mas em cultivar a habilidade de se reinventar.”</blockquote>
             <p>Talissa conduz o Essenza com foco na aplicação real da IA no negócio. A proposta é prática, estratégica e orientada a resultados para empreendedoras.</p>
           </div>
-        </div>+      </section>
+        </div>
+      </section>
 
       <section class="section container" id="faq" aria-labelledby="faq-title">
         <h2 id="faq-title">FAQ</h2>
@@ -228,6 +223,3 @@ index 0000000000000000000000000000000000000000..7f654109b6b4728ac8331a016928d86f
     <script src="scripts.js" defer></script>
   </body>
 </html>
- 
-EOF
-)

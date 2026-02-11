@@ -1,20 +1,22 @@
 [
   {
     "nome": "Turma Essenza #01",
-    "data": "13 e 20 de março de 2025",
-    "local": "João Pessoa - PB",
-    "depoimento": "Saí do evento com um método claro para usar IA no meu negócio todos os dias."
+    "foto": "fundo-essenza.jpeg",
+    "reelsUrl": "https://www.instagram.com/reel/DN3nSGk3meo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     "nome": "Turma Essenza #02",
-    "data": "08 de junho de 2025",
-    "local": "João Pessoa - PB",
-    "depoimento": "Consegui organizar processos e acelerar entregas com prompts práticos."
+    "foto": "fundo-essenza.jpeg",
+    "reelsUrl": "https://www.instagram.com/reel/DN1PAd53guv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     "nome": "Turma Essenza #03",
-    "data": "19 de setembro de 2025",
-    "local": "Online ao vivo",
-    "depoimento": "O Essenza tirou a IA do campo da curiosidade e levou para resultado real."
+    "foto": "fundo-essenza.jpeg",
+    "reelsUrl": "https://www.instagram.com/reel/DPROeJ9DXEi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
+    "nome": "Turma Essenza #04",
+    "foto": "fundo-essenza.jpeg",
+    "reelsUrl": "https://www.instagram.com/reel/DRuoejBiVQZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   }
 ]

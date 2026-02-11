@@ -14,7 +14,7 @@
       property="og:description"
       content="Aprenda processos, prompts e organização para aplicar IA de forma prática no seu negócio."
     />
-    <meta property="og:image" content="fundo-essenza.webp" />
+    <meta property="og:image" content="fundo-essenza.jpeg" />
     <meta property="og:locale" content="pt_BR" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -102,7 +102,9 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#topo">Inova Essenza</a>
+      <a class="brand" href="#top" aria-label="Ir para o topo">
+        <img class="brand__logo" src="fundo-essenza.webp" alt="Logo Essenza por Talissa Mozzini" />
+      </a>
       <nav>
         <a href="#essenza">O Essenza</a>
         <a href="#aprendizado">O que você aprende</a>
@@ -114,9 +116,9 @@
       <a class="btn btn--whatsapp" data-cta-location="menu" href="#">Entrar pelo WhatsApp</a>
     </header>
 
-    <main id="topo">
+    <main id="top">
       <section class="hero section" id="essenza">
-        <img class="hero__bg" src="fundo-essenza.webp" alt="Talissa com robô representando a união entre humano e IA" fetchpriority="high" />
+        <img class="hero__bg" src="fundo-essenza.jpeg" alt="Talissa com robô representando a união entre humano e IA" fetchpriority="high" />
         <div class="hero__overlay"></div>
         <div class="hero__content container">
           <p class="kicker">INOVA ESSENZA</p>
@@ -132,7 +134,7 @@
         </div>
       </section>
 
-      <section class="section container" aria-labelledby="dor-title">
+      <section class="section container pain-points" aria-labelledby="dor-title">
         <h2 id="dor-title">Você se identifica com isso?</h2>
         <div class="grid grid--4">
           <article class="card">Tenho curiosidade, mas não sei por onde começar.</article>
@@ -152,7 +154,7 @@
 
       <section class="section container" id="aprendizado" aria-labelledby="modulos-title">
         <h2 id="modulos-title">O que você vai aprender</h2>
-        <div class="grid grid--2" id="modulos-grid"></div>
+        <div class="grid modules-grid" id="modulos-grid"></div>
       </section>
 
       <section class="section container" aria-labelledby="dia-title">
@@ -186,11 +188,26 @@
 
       <section class="section section--accent" id="sobre" aria-labelledby="sobre-title">
         <div class="container about">
-          <img loading="lazy" src="assets/fundo-essenza.webp" alt="Talissa Mozzini" />
+          <img loading="lazy" src="fundo-essenza.jpeg" alt="Talissa Mozzini" />
           <div>
-            <h2 id="sobre-title">Sobre Talissa</h2>
-            <blockquote>“O verdadeiro poder não está em saber tudo, mas em cultivar a habilidade de se reinventar.”</blockquote>
-            <p>Talissa conduz o Essenza com foco na aplicação real da IA no negócio. A proposta é prática, estratégica e orientada a resultados para empreendedoras.</p>
+            <h2 id="sobre-title">Talissa Mozzini</h2>
+            <p class="about-text">
+              Quem sou eu? 🌸<br />
+              Não é uma resposta simples… porque carrego muitas histórias, conquistas e papéis.<br />
+              Eu sou a soma de muitas jornadas. ✨<br /><br />
+
+              🎬 Apresentadora do quadro Entre Taças na TV Tambaú.<br />
+              🍝 Gestora de dois restaurantes: Famiglia Muccini e Sapore D’Italia.<br />
+              📚 Doutora em psiconeuroimunologia pela UFPB.<br />
+              🎤 Palestrante e professora sobre inteligência artificial e vinhos.<br /><br />
+
+              Cada etapa da minha vida me trouxe aprendizados únicos, e todas elas se conectam em um mesmo propósito: transformar conhecimento em experiências reais. 🌿<br />
+              Tudo isso, da pesquisa acadêmica à gestão, da TV às palestras, da gastronomia à inteligência artificial, me tornou quem sou hoje. 🌟<br /><br />
+
+              Cada experiência só fortaleceu minha essência e me deu as ferramentas para compartilhar conhecimento de forma prática, humana e transformadora. 💡✨<br /><br />
+
+              É por isso que hoje posso conduzir você, com maestria, nessa jornada de unir propósito + tecnologia para alcançar resultados reais. 🚀
+            </p>
           </div>
         </div>
       </section>

@@ -52,7 +52,7 @@ function renderTurmas(turmas) {
     .map(
       (turma) => `
       <article class="card turma">
-        ${turma.foto ? `<img loading="lazy" src="${turma.foto}" alt="${turma.nome}" />` : `<div class="thumb-placeholder" aria-hidden="true"></div>`}
+        <img loading="lazy" src="${turma.foto}" alt="${turma.nome}" />
         <h3>${turma.nome}</h3>
         <p><strong>Data:</strong> ${turma.data}</p>
         <p><strong>Local:</strong> ${turma.local}</p>
@@ -71,7 +71,7 @@ function renderVideos(videos) {
       (video) => `
       <article class="card video">
         <a href="${video.url}" target="_blank" rel="noopener noreferrer">
-          ${video.thumb ? `<img loading="lazy" src="${video.thumb}" alt="${video.titulo}" />` : `<div class="thumb-placeholder" aria-hidden="true"></div>`}
+          <img loading="lazy" src="${video.thumb}" alt="${video.titulo}" />
         </a>
         <h3>${video.titulo}</h3>
       </article>`
@@ -82,7 +82,7 @@ function renderVideos(videos) {
     .map(
       (video) => `
       <article class="card video video--locked">
-        ${video.thumb ? `<img loading="lazy" src="${video.thumb}" alt="${video.titulo}" />` : `<div class="thumb-placeholder" aria-hidden="true"></div>`}
+        <img loading="lazy" src="${video.thumb}" alt="${video.titulo}" />
         <h3>${video.titulo}</h3>
         <span class="locked-tag">🔒 Conteúdo completo disponível para alunas.</span>
       </article>`
